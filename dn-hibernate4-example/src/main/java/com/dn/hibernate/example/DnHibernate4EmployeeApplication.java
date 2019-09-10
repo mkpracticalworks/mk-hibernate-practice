@@ -21,9 +21,9 @@ public class DnHibernate4EmployeeApplication
        Transaction transaction = session.beginTransaction();
        
        DnEmployee employee = new DnEmployee();
-       				employee.setName("soopee");
+       				employee.setName("sangeetha");
        				employee.setPhoneNumber("332222");
-       				employee.setEmail("soopee@kannakuruchi.com");
+       				employee.setEmail("sangeetha@kannakuruchi.com");
        				employee.setAddress("kannakuruchi");
        				
        				session.persist(employee);
