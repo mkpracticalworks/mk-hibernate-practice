@@ -43,7 +43,11 @@ public class DnPersonDetail {
 		this.contactNumber = contactNumber;
 		this.address = address;
 	}
-
+	
+	public DnPersonDetail() {
+	
+	}
+	
 	public long getId() {
 		return id;
 	}
