@@ -30,6 +30,7 @@ public class DnHibernate4FetchDataExample {
 				transaction.commit();
 			}
 
+			@SuppressWarnings("unchecked")
 			List<DnPersonDetail> persons = session.createQuery(" FROM DnPersonDetail").list();
 			for (DnPersonDetail person : persons) {
 				System.out.println(" Person Name :"+person.getName()+" Age"+person.getAge()+" ContactNumber: "+person.getContactNumber()+" "+person.getAddress());
