@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mk.hibernate3.practical.bean.EmployeeBean" table="EmployeeTbl">
+      
+        <id name="employeeId" type="long">
+            <column name="EMPLOYEE_ID" />
+            <generator class="native" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="FIRST_NAME" length="20" not-null="false" unique="false" />
+        </property>
+
+        <property name="lastName" type="string">
+            <column name="LAST_NAME" length="20" not-null="false" unique="false" />
+        </property>
+
+		<property name="gender" column="GENDER" type="character" />
+
+		<property name="contactNumber" column="CONTACT_NUMBER" type="string" />
+		
+		<property name="email" type="string" column="EMAIL" not-null="true" unique="true"/>
+		
+		<property name="address" column="ADDRESS" type="text" />
+		
+		<property name="zipcode" column="ZIP_CODE" type="long" />
+		
+		<property name="salary" column="SALARY" type="double" />  
+		
+		<property name="description" column="DESCRIPTION" type="text" />
+		
+		<property name="status" column="sTATUS" type="true_false" /> 
+		
+		<property name="createDate" column="CREATE_DATE" type="date" /> 
+		
+		<property name="updateDate" column="UPDATE_DATE" type="date" /> 
+		
+    </class>
+</hibernate-mapping>
+
+

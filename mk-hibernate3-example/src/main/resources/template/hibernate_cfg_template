@@ -1,0 +1,25 @@
+<hibernate-configuration>
+<session-factory>
+  
+<! -- Related to the connection START -->
+<property name="connection.driver_class">Driver Class Name </property>
+<property name="connection.url">URL </property>
+<property name="connection.user">USER NAME </property>
+<property name="connection.password">PASSWORD</property>
+<! -- Related to the connection END -->
+  
+<! -- Related to hibernate properties START -->
+<property name="show_sql">true/false</property>
+<property name="format_sql">true/false</property>
+<property name="use_sql_comments">true/false</property>
+<property name="dialet">Database dialet class</property>
+<property name="hbm2ddl.auto">create/create-drop/update/validate</property>
+<! -- Related to hibernate properties END-->
+  
+<! -- Related to mapping START-->
+<mapping resource="hbm file 1 name .xml" / >
+<mapping resource="hbm file 2 name .xml" / >
+<! -- Related to the mapping END -->
+  
+</session-factory>
+</hibernate-configuration>
