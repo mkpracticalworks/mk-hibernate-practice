@@ -8,7 +8,7 @@
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-archivesBaseName = 'dn-hibernate4-gradle'
+archivesBaseName = 'dn-hibernate4-one-to-one'
 version = '1.0-SNAPSHOT' 
 
 repositories {
