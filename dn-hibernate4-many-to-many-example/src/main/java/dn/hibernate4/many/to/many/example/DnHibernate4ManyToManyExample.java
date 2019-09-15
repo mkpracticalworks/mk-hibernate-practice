@@ -9,6 +9,12 @@ import dn.hibernate4.many.to.many.example.model.Category;
 import dn.hibernate4.many.to.many.example.model.Stock;
 import dn.hibernate4.many.to.many.example.util.HibernateUtil;
 
+
+/**
+ * @author Muthukumar Thangavinayagam
+ *
+ */
+
 public class DnHibernate4ManyToManyExample {
 	public static void main(String[] args) {
 		System.out.println("DevNotes Hibernate4 many to many (Annotation)");
@@ -27,13 +33,13 @@ public class DnHibernate4ManyToManyExample {
 		categories.add(category1);
 		categories.add(category2);
 		categories.add(category3);
-		
+
 		stock.setCategories(categories);
 
 		session.save(stock);
-		
+
 		session.getTransaction().commit();
-		
+
 		System.out.println("Stock and Category Record inserted successfully");
 
 	}

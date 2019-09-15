@@ -13,6 +13,11 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+/**
+ * @author Muthukumar Thangavinayagam
+ *
+ */
+
 @Entity
 @Table(name = "category",catalog = "mkdev_mtm_db")
 public class Category implements Serializable {
